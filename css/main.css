@@ -314,7 +314,7 @@ body {}
     text-align: center;
 }
 
-.notic-ico {
+.notice-ico {
     position: absolute;
     top: 2.5rem;
     left: 27rem;
@@ -334,81 +334,127 @@ body {}
     height: 33rem;
     overflow: hidden;
     background-color: #fff;
+    padding-top: 3rem;
+    padding-left: 5rem;
+}
+
+.notice-menu {
+    position: relative;
+    display: block;
+}
+
+.notic-plus {
+    position: relative;
+
+}
+
+.notice-menu a {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2;
+    font-style: normal;
+    padding: 0 1rem;
+    border-radius: 5px 5px 0 0;
+}
+
+.notice-menu ::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 47rem;
+    height: 0.2rem;
+    background-color: #666;
+}
+
+.notice-menu a:hover {
+    color: #fff;
+    background-color: #3ca479;
+}
+
+.notice-menu-active {
+    color: #fff !important;
+    background-color: #3ca479 !important;
+}
+
+.notice-plus {
+    position: absolute;
+    right: 7.5rem;
+    top: 1rem;
+}
+
+.notice-cont {
+    position: relative;
+    display: block;
 }
 
 .notice-list {
-    position: relative;
-    display: block;
-    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
 }
 
-.notice-list>li {
-    position: relative;
+.notice-list-active {
     display: block;
-    float: left;
 }
 
-.notice-list>li>a {
-    color: #333;
-    font-size: 1.8rem;
-    font-weight: 400;
-    letter-spacing: -0.0425;
-    line-height: 1.5;
-    font-style: normal;
-    text-align: left;
+.notice-right-txt {
+    position: relative;
+    display: block;
+    margin-top: 2rem;
+}
+
+.notice-right-txt li {
+    position: relative;
+    display: block;
+    margin-top: 1.5rem;
+}
+
+.notice-right-txt li::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 47rem;
+    height: 0.1rem;
+    background-color: #999;
 }
 
 .notice-right-txt b {
     color: #333;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 600;
     letter-spacing: -0.0425;
-    line-height: 1;
+    line-height:2.5;
     font-style: normal;
     text-align: center;
 }
 
+.notice-right-txt span {
+    position: absolute;
+    right: -2.7rem;
+    color: #bbb;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: -0.0425rem;
+    line-height: 2;
+}
+
+
+
 .notice-right-txt em {
     color: #666;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     font-weight: 400;
-    letter-spacing: -0.0425;
+    letter-spacing: -0.0425rem;
     line-height: 2;
     font-style: normal;
     text-align: center;
 }
-.notice-list > li > a:hover {
-    color: #fff;
-    background-color: #000;
-}
 
-.notice-menu-active {
-    color:#fff !important;
-    background-color: red !important;
-}
 
-.tab-cont {
-    position: relative;
-    display: block;
-    height: 400px;
-    background-color: violet;
-}
-
-.tab-box {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-
-    /* 추천합니다. */
-    background-color: aqua;
-    display: none;
-}
-
-.tab-box-active {
-    display: block !important;
-}
 /* map 영역 */
 .map {
     position: relative;
